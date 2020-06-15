@@ -11,3 +11,9 @@ fun checkCondition(condition) {
 checkCondition(condition);
 condition = true;
 checkCondition(condition);
+
+var a = true and false;
+var b = true or false;
+var c = !false;
+
+print a + ", " + b + ", " + c

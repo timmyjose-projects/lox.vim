@@ -15,3 +15,12 @@ print aString;
 
 var sum = intNum * 2;
 print sum;
+
+var anotherFloat = -123.10;
+print anotherFloat;
+
+var anotherInt = -199;
+print anotherInt;
+
+var stringTest = "'Hello, world', said the jester";
+print stringTest;
