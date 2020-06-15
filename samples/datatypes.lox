@@ -1,0 +1,17 @@
+var trueVar = true;
+var falseVar = false;
+
+print trueVar;
+print falseVar;
+
+var intNum = 100;
+print intNum;
+
+var floatNum = 1.2345;
+print floatNum;
+
+var aString = "Hello, world";
+print aString;
+
+var sum = intNum * 2;
+print sum;

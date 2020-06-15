@@ -1,0 +1,48 @@
+class Breakfast {
+  init(meat, bread) {
+    this.meat = meat;
+    this.bread = bread;
+  }
+
+  cook() {
+    print "Eggs a-fryin'";
+  }
+
+  serve(who) {
+    print "Enjoy your " + this.meat + " and " + this.bread + ", " + who + "!";
+  }
+}
+
+var breakfast = Breakfast("beef", "Italian");
+print breakfast;
+breakfast.cook();
+breakfast.serve("Bob");
+
+class Brunch < Breakfast {
+  init(meat, bread, drink) {
+    super.init(meat, bread);
+    this.drink = drink;
+  }
+
+  offerDrink() {
+    print "How about a " + this.drink + "?";
+  }
+}
+
+var brunch = Brunch("pork", "Rye", "Bloody Mary");
+brunch.cook();
+brunch.serve("Me");
+brunch.offerDrink();
+
+// A simple counter class
+class Counter {
+  init(to) {
+    this.to = to;
+  }
+
+  count() {
+    for (var i = 0; i < to; i = i + 1) {
+      print i;
+    }
+  }
+}

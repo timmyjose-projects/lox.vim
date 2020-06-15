@@ -1,0 +1,36 @@
+fun addPair(a, b) {
+  return a + b;
+}
+
+fun identity(a) {
+  return a;
+}
+
+print identity(addPair)(1, 2);
+
+fun returnFunction() {
+  var outside = "Outside";
+
+  fun inner() {
+    print outside;
+  }
+
+  return inner;
+}
+
+var fn = returnFunction();
+fn();
+
+fun addN(n) {
+  fun addToX(x) {
+    return x + n;
+  }
+
+  return addToX;
+}
+
+var add100 = addN(100);
+
+for (var i = 0; i < 10; i = i + 1) {
+  print add100(i);
+}

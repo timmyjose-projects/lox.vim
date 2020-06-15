@@ -1,0 +1,13 @@
+var condition = false;
+
+fun checkCondition(condition) {
+  if (condition) {
+    print "Condition is true";
+  } else {
+    print "Condition is false";
+  }
+}
+
+checkCondition(condition);
+condition = true;
+checkCondition(condition);

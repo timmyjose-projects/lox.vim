@@ -1,0 +1,10 @@
+fun factorial(n) {
+  if (n <= 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+print "The factorial of 10 is ";
+print factorial(10);
