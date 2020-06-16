@@ -8,25 +8,44 @@ This plugin is compatible with Vim's (and NeoVim's) native plugin manager, Patho
 
 ### Vanilla Vim/NeoVim
 
-<TBD>
+The plugin should work as-is with Vim/NeoVim's native plugin manager. For instance, 
+
+```
+$ cd ~/.vim/pack/plugins/start && git clone https://github.com/timmyjose-projects/lox.vim
+
+```
+
+should have the plugin up and running.
 
 ### Plug
 
-Add the following line to your Vim/NeoVim configuration file:
+Add the following line to your Vim/NeoVim configuration file's `Vim-Plug` plugin section:
 
 ```
 Plug 'timmyjose-projects/lox.vim'
 ```
 
-and then run `PlugInstall` or `PlugUpdate` as the case may be.
+and then run `PlugInstall` or (`PlugUpdate` as the case may be).
 
 ### Vundle
 
-<TBD>
+Add the following line to your Vim/NeoVim configuration file's `Vundle` plugin section:
+
+```
+Plugin 'timmyjose-projects/lox.vim'
+```
+
+and then run `PluginInstall` (or `PluginUpdate` as the case may be)
 
 ### Pathogen
 
-<TBD>
+This plugin is compatible with Pathogen as well. Clone the `lox.vim` project into `~/.vim/bundle` as for any
+other plugin:
+
+```
+cd ~/.vim/bundle && git clone https://github.com/timmyjose-projects/lox.vim
+
+```
 
 ### Options
 
@@ -68,7 +87,7 @@ To access the main help page,
 
    ```
 
-(Note: In case this doesn't work, try regenerating the tags for help files by running `:helptags doc`).
+(Note: In case this doesn't work, try regenerating the tags for help files by running `:helptags ALL`, ignoreing any errors).
 
 # LICENCE
 
