@@ -68,7 +68,7 @@ To access the main help page,
 
    ```
 
-(Note: In case this doesn't work, try regenerating the tags for help files by running `:Helptags`).
+(Note: In case this doesn't work, try regenerating the tags for help files by running `:helptags doc`).
 
 # LICENCE
 

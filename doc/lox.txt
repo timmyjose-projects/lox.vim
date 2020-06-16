@@ -30,23 +30,79 @@ CONTENTS                                                         *LoxContents*
 ===============================================================================
 Section 1: Usage                                             *LoxUsage*
 
+This plugin provides basic syntax highlighting for Lox files (files that end in
+`.lox`). The specific colours will be based on your currently selected colour
+scheme.
+
+In addition, you can run the currently loaded Lox script in two ways:
+
+Normal mode~
+
+>
+  <LocalLeader>r
+>
+
+Ex command~
+
+You can also run the script in Ex mode by running:
+
+>
+  :LoxRun
+>
+
+Options~
+
+You can control the behaviour of the plugin using the following options:
+
+`g:lox_use_jlox`. This is turned off by default, and so the plugin assumes that
+you are using `clox` for running the script. If you wish to use `jlox` instead,
+then enable it in your Vim/NeoVim configuration file by including the following
+line:
+
+>
+  let g:lox_use_jlox = 1
+<
 
 ===============================================================================
 Section 2: Mappings                                          *LoxMappings*
 
+`lox.vim` has only one mapping for now:
+
+>
+  :nnoremap <buffer><LocalLeader>r :call lox#running#LoxCompileAndRunFile()<Cr>
+<
+
+This sets a buffer-local mapping using '<LocalLeader>' (run `:help
+maplocalleader` if you are not familiar with it).
 
 ===============================================================================
 Section 2: Ex Commands                                       *LoxExCommands*
 
+As mentioned in the |LoxUsage| section, you can also execute the currently
+loaded script using the 'Ex' mode command, `:LoxRun`, which is defined so:
+
+>
+  :command! LoxRun :call lox#running#LoxCompileAndRunFile()
+<
 
 ===============================================================================
 Section 4: Licence                                           *LoxLicence*
 
+This plugin is provided as-is under the terms of the MIT licence. Refer to the
+`LICENCE.md` file for more details.
 
 ===============================================================================
 Section 5: Contributing                                      *LoxContributing*
 
+All contributions are welcome (bug reports, feature requests, corrections and
+tweaks). 
+
+Please check the official repository for this plugin - 
+https://github.com/timmyjose-projects/lox.vim for this.
+
 
 ===============================================================================
-Section 6: Credits                                           *LoxCtedits*
+Section 6: Credits                                           *LoxCredits*
+
+This plugin was created by Timmy Jose <zoltan.jose@gmail.com>.
 
