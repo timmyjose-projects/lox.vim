@@ -91,4 +91,4 @@ To access the main help page,
 
 # LICENCE
 
-See [LICENCE](LICENCE.md).
+See [LICENCE](LICENSE.md).
