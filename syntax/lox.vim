@@ -13,6 +13,9 @@
 " booleans
 :syntax keyword loxBoolean true false
 
+" constants
+:syntax keyword loxConstant nil
+
 " functions
 :syntax keyword loxFunction print 
 
@@ -38,6 +41,7 @@
 
 :highlight link loxKeyword Keyword
 :highlight link loxBoolean Boolean
+:highlight link loxConstant Constant
 :highlight link loxFunction Function
 :highlight link loxOperator Operator
 :highlight link loxConditional Conditional
